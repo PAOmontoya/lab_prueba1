@@ -3,22 +3,21 @@ package com.mycompany.lab_prueba1;
 import java.util.ArrayList;
 
 public class AdminPalabrasSecretas {
- 
-    public static ArrayList<String> palabrasSecretas;
+    static ArrayList<String> palabrasSecretas;
     
+
     public AdminPalabrasSecretas(){
-    palabrasSecretas= new ArrayList<>();    
-    palabrasSecretas.add("PAYASITOS");
-    palabrasSecretas.add("ELECTROENCEFALOGRAFISTA");
-    palabrasSecretas.add("DINERO");
+        palabrasSecretas=new ArrayList<>();
+        palabrasSecretas.add("PAYASO");
+        palabrasSecretas.add("DINERO");
+        palabrasSecretas.add("ALIEN");
+    }
+
+    public void agregarPalabra(String palabraSecreta) {
+        palabrasSecretas.add(palabraSecreta);
     }
     
-    public void addPalabra(String palabra){
-        palabrasSecretas.add(palabra);
-    }
-    
-    public static ArrayList getPaabras(){
+    public static ArrayList getpalabrasSecretas(){
         return palabrasSecretas;
     }
-    
 }
